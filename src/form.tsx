@@ -67,7 +67,7 @@ const App: React.FC = () => {
                     label='main or Not'
                     name={[name, 'is_main']}
                   >
-                    <Radio className="form-check-input" checked={isMainBranch(name)} onChange={() => handleBranchChange(name)} name="main_branch_input" type="checkbox" id={`${key}`} />
+                    <Radio className="form-check-input" checked={isMainBranch(name)} onChange={() => handleBranchChange(name)} name="main_branch_input" id={`${key}`} />
                   </Form.Item>
                   {
                     !isMainBranch(name) ? (
